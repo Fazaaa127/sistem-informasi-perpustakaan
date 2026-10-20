@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -9,22 +10,48 @@
 <body>
     <header>
         <h1>Sistem Informasi Perpustakaan</h1>
-        <p>Kelola data buku dengan mudah</p>
+        <p>Kelola dan cari data buku dengan mudah</p>
     </header>
 
     <main>
         <section class="form-buku">
             <h2>Tambah Data Buku</h2>
+
             <form id="formBuku">
-                <input type="text" id="judul" placeholder="Judul buku" required>
-                <input type="text" id="penulis" placeholder="Nama penulis" required>
-                <input type="text" id="isbn" placeholder="Kode buku (contoh: BK001)" required>
+                <input
+                    type="text"
+                    id="judul"
+                    placeholder="Judul buku"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="penulis"
+                    placeholder="Nama penulis"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="isbn"
+                    placeholder="Kode buku (contoh: BK001)"
+                    required
+                >
+
                 <button type="submit">Tambah Buku</button>
             </form>
         </section>
 
-        <section>
+        <section class="daftar-buku">
             <h2>Daftar Buku</h2>
+
+            <input
+                type="text"
+                id="cariBuku"
+                placeholder="Cari judul, penulis, atau kode buku..."
+            >
+
             <table>
                 <thead>
                     <tr>
@@ -33,8 +60,14 @@
                         <th>Kode Buku</th>
                     </tr>
                 </thead>
-                <tbody id="daftarBuku"></tbody>
+
+                <tbody id="daftarBuku">
+                </tbody>
             </table>
+
+            <p id="pesanKosong" hidden>
+                Buku tidak ditemukan.
+            </p>
         </section>
     </main>
 
