@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Informasi Perpustakaan</h1>
+        <p>Kelola data buku dengan mudah</p>
+    </header>
+
+    <main>
+        <section class="form-buku">
+            <h2>Tambah Data Buku</h2>
+            <form id="formBuku">
+                <input type="text" id="judul" placeholder="Judul buku" required>
+                <input type="text" id="penulis" placeholder="Nama penulis" required>
+                <input type="text" id="isbn" placeholder="Kode buku (contoh: BK001)" required>
+                <button type="submit">Tambah Buku</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Daftar Buku</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Judul</th>
+                        <th>Penulis</th>
+                        <th>Kode Buku</th>
+                    </tr>
+                </thead>
+                <tbody id="daftarBuku"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
